@@ -19,3 +19,14 @@ npm-debug.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# Test Scripts
+cleanup-logs.js
+check-db-stats.js
+debug-logs.js
+debug-session-sync.js
+drop-collections.js
+force-reset.js
+simple-count.js
+test-*.js
+wipe-db.js

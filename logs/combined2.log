@@ -1,0 +1,851 @@
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:49:35","url":"/agents/v3/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:49:37","url":"/agents/v3/logs"}
+{"level":"info","message":"🛑 Stopping sync service...","service":"pipecat-sync","timestamp":"2026-01-20 14:49:38"}
+{"level":"info","message":"🚀 Starting Pipecat MongoDB Sync Service","service":"pipecat-sync","timestamp":"2026-01-20 14:50:14"}
+{"level":"info","message":"✅ MongoDB connected successfully","service":"pipecat-sync","timestamp":"2026-01-20 14:50:14"}
+{"level":"info","message":"✅ Database indexes created","service":"pipecat-sync","timestamp":"2026-01-20 14:50:15"}
+{"level":"info","message":"Starting cron scheduler with schedule: 0 * * * *","service":"pipecat-sync","timestamp":"2026-01-20 14:50:15"}
+{"level":"info","message":"✅ Service started successfully","service":"pipecat-sync","timestamp":"2026-01-20 14:50:15"}
+{"level":"info","message":"🚀 Starting Realtime Dashboard Sync Service (OPTIMIZED)","service":"pipecat-sync","timestamp":"2026-01-20 14:50:27"}
+{"level":"info","message":"📅 Filtering data from: 2026-01-01T00:00:00.000Z","service":"pipecat-sync","timestamp":"2026-01-20 14:50:27"}
+{"level":"info","message":"✅ MongoDB connected","service":"pipecat-sync","timestamp":"2026-01-20 14:50:28"}
+{"level":"info","message":"🔄 Sync Cycle Started at 2026-01-20T09:20:28.148Z","service":"pipecat-sync","timestamp":"2026-01-20 14:50:28"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:29","url":"/agents"}
+{"level":"debug","message":"Fetched page 1: 11 agents (total: 11)","service":"pipecat-sync","timestamp":"2026-01-20 14:50:29"}
+{"level":"info","message":"Fetched 11 agents from Pipecat Cloud","service":"pipecat-sync","timestamp":"2026-01-20 14:50:29"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:30","url":"/agents/v3/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for v3:","sampleSession":{"botStartSeconds":24,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-12T04:29:15.000Z","deploymentId":"2c8f7dda-a9a0-4538-bef4-66d9c3b3e74c","endedAt":"2026-01-12T04:30:22.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"4b983030-e699-4c90-a182-d88152987d99","sessionId":"b69a0928-6396-41c3-9fad-e4a108cd3b40","updatedAt":"2026-01-12T04:30:13.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:30"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for v3","service":"pipecat-sync","timestamp":"2026-01-20 14:50:30"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:31","url":"/agents/v3/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for v3:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-20T15:49:57.000Z","deploymentId":"faed5534-f5b6-408e-babc-266e4d1cd32d","endedAt":"2025-12-20T15:53:22.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"4b983030-e699-4c90-a182-d88152987d99","sessionId":"244d36c9-232f-43a6-9d4b-9da3adec7b9b","updatedAt":"2025-12-20T15:53:17.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:31"}
+{"level":"debug","message":"Fetched page 2: 68 sessions for v3","service":"pipecat-sync","timestamp":"2026-01-20 14:50:31"}
+{"level":"info","message":"Fetched 168 sessions for agent v3","service":"pipecat-sync","timestamp":"2026-01-20 14:50:31"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:32","url":"/agents/apcnf/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for apcnf:","sampleSession":{"botStartSeconds":13,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-13T04:03:34.000Z","deploymentId":"05f67648-20d3-4a3d-a3ed-304307d759e8","endedAt":"2026-01-13T04:03:57.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"f9d9757c-9e38-4c98-935a-f7d4c6484b92","sessionId":"fb6f6f67-6b52-4b36-afd7-f687b5993971","updatedAt":"2026-01-13T04:03:54.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:32"}
+{"level":"debug","message":"Fetched page 1: 10 sessions for apcnf","service":"pipecat-sync","timestamp":"2026-01-20 14:50:32"}
+{"level":"info","message":"Fetched 10 sessions for agent apcnf","service":"pipecat-sync","timestamp":"2026-01-20 14:50:32"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:33","url":"/agents/apcnf-telugu/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for apcnf-telugu:","sampleSession":{"botStartSeconds":23,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-20T03:19:39.000Z","deploymentId":"fb90b450-6308-43fb-95e1-218f612cc5b1","endedAt":"2026-01-20T03:25:02.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"d4f3e742-1c9e-4e7a-ad01-3a816596d78e","sessionId":"773122c3-d73c-44a5-a42b-78aa1eba8da1","updatedAt":"2026-01-20T03:25:00.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:33"}
+{"level":"debug","message":"Fetched page 1: 12 sessions for apcnf-telugu","service":"pipecat-sync","timestamp":"2026-01-20 14:50:33"}
+{"level":"info","message":"Fetched 12 sessions for agent apcnf-telugu","service":"pipecat-sync","timestamp":"2026-01-20 14:50:33"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:33","url":"/agents/methane-agent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for methane-agent:","sampleSession":{"botStartSeconds":23,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-18T10:13:56.000Z","deploymentId":"389abcf6-2afa-4867-bee2-8f26997b39f2","endedAt":"2026-01-18T10:15:11.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"a7129f4f-b67c-4098-b574-7f0bbe4f40e1","sessionId":"349ce608-78c5-48d5-bdb5-b7807e04130d","updatedAt":"2026-01-18T10:15:06.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:33"}
+{"level":"debug","message":"Fetched page 1: 18 sessions for methane-agent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:33"}
+{"level":"info","message":"Fetched 18 sessions for agent methane-agent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:33"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:34","url":"/agents/agent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for agent:","sampleSession":{"botStartSeconds":22,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-18T11:53:32.000Z","deploymentId":"83a9b4db-8700-4d16-8c03-9979c4a3afad","endedAt":"2026-01-18T11:56:21.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"b09fb226-bdf2-4a4c-8446-cf1b2dbd86c9","sessionId":"e9e3a654-79ea-41b9-8087-a40a4b5d7cce","updatedAt":"2026-01-18T11:56:16.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:34"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for agent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:34"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:34","url":"/agents/agent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for agent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-23T09:11:40.000Z","deploymentId":"1472a5e3-e06c-45e0-9e56-4027c0ebc4f8","endedAt":"2025-12-23T09:12:27.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"b09fb226-bdf2-4a4c-8446-cf1b2dbd86c9","sessionId":"3ce0183a-0dc1-4c66-b1e7-ca425f26d284","updatedAt":"2025-12-23T09:12:20.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:34"}
+{"level":"debug","message":"Fetched page 2: 22 sessions for agent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:34"}
+{"level":"info","message":"Fetched 122 sessions for agent agent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:34"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:35","url":"/agents/coconut/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for coconut:","sampleSession":{"botStartSeconds":21,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-10T06:06:42.000Z","deploymentId":"cd8424ac-7135-4f39-a858-ec4d1692b391","endedAt":"2026-01-10T06:07:19.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"0e4b3910-440c-4787-a296-aec4b1e772d5","sessionId":"0627c5f7-9d91-4396-a641-3d02e95b20b6","updatedAt":"2026-01-10T06:07:09.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:35"}
+{"level":"debug","message":"Fetched page 1: 10 sessions for coconut","service":"pipecat-sync","timestamp":"2026-01-20 14:50:35"}
+{"level":"info","message":"Fetched 10 sessions for agent coconut","service":"pipecat-sync","timestamp":"2026-01-20 14:50:35"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:36","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-20T08:44:58.000Z","deploymentId":"e437c7a9-8bf5-4645-94d5-eae785a3e0b1","endedAt":"2026-01-20T08:45:27.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"760209f0-bd8b-44a4-8f44-1de18aadd8f6","updatedAt":"2026-01-20T08:45:21.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:36"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:36"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:37","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-08T11:27:19.000Z","deploymentId":"e0d26cc8-0657-40f7-9ee6-71e702eb95b3","endedAt":"2026-01-08T11:29:51.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"db3a223e-5a67-4219-8c34-3906320178c6","updatedAt":"2026-01-08T11:29:48.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:37"}
+{"level":"debug","message":"Fetched page 2: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:37"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:37","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":3438,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-06T12:55:36.000Z","deploymentId":"f9fb98ab-1333-490c-9535-e6ba820ed810","endedAt":"2026-01-06T15:52:55.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"f90ded08-053a-447c-9fbd-84d0dcce93ed","updatedAt":"2026-01-06T15:52:53.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:37"}
+{"level":"debug","message":"Fetched page 3: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:37"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:37","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":9,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-02T13:03:36.000Z","deploymentId":"5120909b-2346-4c54-9f06-f39b663f6dc8","endedAt":"2026-01-02T13:05:42.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"86551772-7921-49ee-ae8d-4a813c220221","updatedAt":"2026-01-02T13:05:34.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:37"}
+{"level":"debug","message":"Fetched page 4: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:37"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:38","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-29T10:56:12.000Z","deploymentId":"242a6805-72c9-486f-8b8e-4ebf0fb14e18","endedAt":"2025-12-29T10:56:47.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"290a72fc-131e-4e33-8805-8908f966d551","updatedAt":"2025-12-29T10:56:47.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:38"}
+{"level":"debug","message":"Fetched page 5: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:38"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:38","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-27T02:10:37.000Z","deploymentId":"8b89b266-79e9-47e9-8e37-ed2c709dea98","endedAt":"2025-12-27T02:15:38.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"4f22b76b-30ba-469b-866a-48f1f1f95bc9","updatedAt":"2025-12-27T02:15:32.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:38"}
+{"level":"debug","message":"Fetched page 6: 9 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:38"}
+{"level":"info","message":"Fetched 509 sessions for agent webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:50:38"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:53","url":"/agents/biolmin/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for biolmin:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-19T08:41:52.000Z","deploymentId":"9a2dd427-8345-4feb-8c0e-368350f4c453","endedAt":"2026-01-19T08:47:49.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"fa61226c-e80a-4f1d-b622-21be4f6b2abb","sessionId":"db6c6eba-6338-46e8-8703-4763c9b94ed0","updatedAt":"2026-01-19T08:47:44.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:53"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for biolmin","service":"pipecat-sync","timestamp":"2026-01-20 14:50:53"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:53","url":"/agents/biolmin/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for biolmin:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-02T14:50:17.000Z","deploymentId":"05b2213f-d4f2-4970-9b27-d06bf550eda8","endedAt":"2026-01-02T14:55:17.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"fa61226c-e80a-4f1d-b622-21be4f6b2abb","sessionId":"a4fe294c-d9e1-42c3-9c2b-f63ab8e50e7e","updatedAt":"2026-01-02T14:55:14.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:53"}
+{"level":"debug","message":"Fetched page 2: 2 sessions for biolmin","service":"pipecat-sync","timestamp":"2026-01-20 14:50:53"}
+{"level":"info","message":"Fetched 102 sessions for agent biolmin","service":"pipecat-sync","timestamp":"2026-01-20 14:50:53"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:58","url":"/agents/ecohome/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for ecohome:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":null,"createdAt":"2026-01-20T09:16:30.000Z","deploymentId":"4666e487-66ac-4782-b9c7-a3ecf788a63e","endedAt":null,"organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"39a14cef-e5e1-4468-9819-5a5597ef7c46","sessionId":"8afb26dd-0b08-4996-a963-60b1ab3c50a1","updatedAt":"2026-01-20T09:20:58.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:50:58"}
+{"level":"debug","message":"Fetched page 1: 41 sessions for ecohome","service":"pipecat-sync","timestamp":"2026-01-20 14:50:58"}
+{"level":"info","message":"Fetched 41 sessions for agent ecohome","service":"pipecat-sync","timestamp":"2026-01-20 14:50:58"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:00","url":"/agents/gunjesh/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for gunjesh:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"WS_CONNECTION_CLOSED","createdAt":"2026-01-19T06:31:23.000Z","deploymentId":"2c40c25e-554d-4788-8da3-b66db4ce79c1","endedAt":"2026-01-19T06:39:14.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"c7efbfeb-c7a8-4989-984a-b17f85d18d4f","sessionId":"1bd1210f-ffab-4180-bd06-87fd50c0a533","updatedAt":"2026-01-19T06:39:11.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:00"}
+{"level":"debug","message":"Fetched page 1: 50 sessions for gunjesh","service":"pipecat-sync","timestamp":"2026-01-20 14:51:00"}
+{"level":"info","message":"Fetched 50 sessions for agent gunjesh","service":"pipecat-sync","timestamp":"2026-01-20 14:51:00"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:02","url":"/agents/sureshagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for sureshagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-14T08:55:35.000Z","deploymentId":"f714371b-ba7b-409f-8560-62e357bbd9c8","endedAt":"2026-01-14T08:56:56.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"8a8a0cd1-c4d7-4d76-a433-7358c3401bb3","sessionId":"e6dc13eb-aedf-4c6f-a3bd-ecd2e8290b46","updatedAt":"2026-01-14T08:56:52.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:02"}
+{"level":"debug","message":"Fetched page 1: 27 sessions for sureshagent","service":"pipecat-sync","timestamp":"2026-01-20 14:51:02"}
+{"level":"info","message":"Fetched 27 sessions for agent sureshagent","service":"pipecat-sync","timestamp":"2026-01-20 14:51:02"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:16","url":"/agents/v3/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:27","url":"/agents/v3/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for v3.","service":"pipecat-sync","timestamp":"2026-01-20 14:51:27"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:31","url":"/agents/apcnf/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:33","url":"/agents/apcnf/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:36","url":"/agents/apcnf-telugu/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:37","url":"/agents/apcnf-telugu/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:41","url":"/agents/methane-agent/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for methane-agent.","service":"pipecat-sync","timestamp":"2026-01-20 14:51:41"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:51:50","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:52:02","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:52:12","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:52:30","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:52:51","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:53:03","url":"/agents/agent/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for agent.","service":"pipecat-sync","timestamp":"2026-01-20 14:53:03"}
+{"level":"info","message":"🚀 Starting Pipecat MongoDB Sync Service","service":"pipecat-sync","timestamp":"2026-01-20 14:53:39"}
+{"level":"info","message":"✅ MongoDB connected successfully","service":"pipecat-sync","timestamp":"2026-01-20 14:53:39"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:53:40","url":"/agents/coconut/logs"}
+{"level":"info","message":"✅ Database indexes created","service":"pipecat-sync","timestamp":"2026-01-20 14:53:41"}
+{"level":"info","message":"Starting cron scheduler with schedule: 0 * * * *","service":"pipecat-sync","timestamp":"2026-01-20 14:53:41"}
+{"level":"info","message":"✅ Service started successfully","service":"pipecat-sync","timestamp":"2026-01-20 14:53:41"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:04","url":"/agents/coconut/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:06","url":"/agents/coconut/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:11","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:14","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:18","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:21","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:24","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:26","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:29","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:31","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:33","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:35","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:38","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:40","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:42","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:44","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:46","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:48","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:50","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:52","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:54","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:56","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:54:58","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:00","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:03","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:05","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:07","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:09","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:11","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:14","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:16","url":"/agents/webagent/logs"}
+{"level":"info","message":"🚀 Starting Pipecat MongoDB Sync Service","service":"pipecat-sync","timestamp":"2026-01-20 14:55:17"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:18","url":"/agents/webagent/logs"}
+{"level":"info","message":"✅ MongoDB connected successfully","service":"pipecat-sync","timestamp":"2026-01-20 14:55:19"}
+{"level":"info","message":"✅ Database indexes created","service":"pipecat-sync","timestamp":"2026-01-20 14:55:20"}
+{"level":"info","message":"Starting cron scheduler with schedule: 0 * * * *","service":"pipecat-sync","timestamp":"2026-01-20 14:55:20"}
+{"level":"info","message":"✅ Service started successfully","service":"pipecat-sync","timestamp":"2026-01-20 14:55:20"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:21","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:23","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:25","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:27","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:30","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:32","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:35","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:38","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:41","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:44","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:47","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:55:51","url":"/agents/webagent/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for webagent.","service":"pipecat-sync","timestamp":"2026-01-20 14:55:51"}
+{"level":"info","message":"🛑 Stopping sync service...","service":"pipecat-sync","timestamp":"2026-01-20 14:55:55"}
+{"level":"info","message":"🚀 Starting Realtime Dashboard Sync Service (FINAL)","service":"pipecat-sync","timestamp":"2026-01-20 14:56:38"}
+{"level":"info","message":"📅 Filtering data from: 2026-01-01T00:00:00.000Z","service":"pipecat-sync","timestamp":"2026-01-20 14:56:38"}
+{"level":"info","message":"✅ MongoDB connected","service":"pipecat-sync","timestamp":"2026-01-20 14:56:39"}
+{"level":"info","message":"🔄 Sync Cycle Started at 2026-01-20T09:26:39.301Z","service":"pipecat-sync","timestamp":"2026-01-20 14:56:39"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:40","url":"/agents"}
+{"level":"debug","message":"Fetched page 1: 11 agents (total: 11)","service":"pipecat-sync","timestamp":"2026-01-20 14:56:40"}
+{"level":"info","message":"Fetched 11 agents from Pipecat Cloud","service":"pipecat-sync","timestamp":"2026-01-20 14:56:40"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:41","url":"/agents/v3/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for v3:","sampleSession":{"botStartSeconds":24,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-12T04:29:15.000Z","deploymentId":"2c8f7dda-a9a0-4538-bef4-66d9c3b3e74c","endedAt":"2026-01-12T04:30:22.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"4b983030-e699-4c90-a182-d88152987d99","sessionId":"b69a0928-6396-41c3-9fad-e4a108cd3b40","updatedAt":"2026-01-12T04:30:13.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:41"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for v3","service":"pipecat-sync","timestamp":"2026-01-20 14:56:41"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:42","url":"/agents/v3/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for v3:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-20T15:49:57.000Z","deploymentId":"faed5534-f5b6-408e-babc-266e4d1cd32d","endedAt":"2025-12-20T15:53:22.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"4b983030-e699-4c90-a182-d88152987d99","sessionId":"244d36c9-232f-43a6-9d4b-9da3adec7b9b","updatedAt":"2025-12-20T15:53:17.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:42"}
+{"level":"debug","message":"Fetched page 2: 68 sessions for v3","service":"pipecat-sync","timestamp":"2026-01-20 14:56:42"}
+{"level":"info","message":"Fetched 168 sessions for agent v3","service":"pipecat-sync","timestamp":"2026-01-20 14:56:42"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:43","url":"/agents/apcnf/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for apcnf:","sampleSession":{"botStartSeconds":13,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-13T04:03:34.000Z","deploymentId":"05f67648-20d3-4a3d-a3ed-304307d759e8","endedAt":"2026-01-13T04:03:57.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"f9d9757c-9e38-4c98-935a-f7d4c6484b92","sessionId":"fb6f6f67-6b52-4b36-afd7-f687b5993971","updatedAt":"2026-01-13T04:03:54.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:43"}
+{"level":"debug","message":"Fetched page 1: 10 sessions for apcnf","service":"pipecat-sync","timestamp":"2026-01-20 14:56:43"}
+{"level":"info","message":"Fetched 10 sessions for agent apcnf","service":"pipecat-sync","timestamp":"2026-01-20 14:56:43"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:43","url":"/agents/apcnf-telugu/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for apcnf-telugu:","sampleSession":{"botStartSeconds":23,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-20T03:19:39.000Z","deploymentId":"fb90b450-6308-43fb-95e1-218f612cc5b1","endedAt":"2026-01-20T03:25:02.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"d4f3e742-1c9e-4e7a-ad01-3a816596d78e","sessionId":"773122c3-d73c-44a5-a42b-78aa1eba8da1","updatedAt":"2026-01-20T03:25:00.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:43"}
+{"level":"debug","message":"Fetched page 1: 12 sessions for apcnf-telugu","service":"pipecat-sync","timestamp":"2026-01-20 14:56:43"}
+{"level":"info","message":"Fetched 12 sessions for agent apcnf-telugu","service":"pipecat-sync","timestamp":"2026-01-20 14:56:43"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:44","url":"/agents/methane-agent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for methane-agent:","sampleSession":{"botStartSeconds":23,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-18T10:13:56.000Z","deploymentId":"389abcf6-2afa-4867-bee2-8f26997b39f2","endedAt":"2026-01-18T10:15:11.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"a7129f4f-b67c-4098-b574-7f0bbe4f40e1","sessionId":"349ce608-78c5-48d5-bdb5-b7807e04130d","updatedAt":"2026-01-18T10:15:06.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:44"}
+{"level":"debug","message":"Fetched page 1: 18 sessions for methane-agent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:44"}
+{"level":"info","message":"Fetched 18 sessions for agent methane-agent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:44"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:44","url":"/agents/agent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for agent:","sampleSession":{"botStartSeconds":22,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-18T11:53:32.000Z","deploymentId":"83a9b4db-8700-4d16-8c03-9979c4a3afad","endedAt":"2026-01-18T11:56:21.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"b09fb226-bdf2-4a4c-8446-cf1b2dbd86c9","sessionId":"e9e3a654-79ea-41b9-8087-a40a4b5d7cce","updatedAt":"2026-01-18T11:56:16.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:44"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for agent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:44"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:45","url":"/agents/agent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for agent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-23T09:11:40.000Z","deploymentId":"1472a5e3-e06c-45e0-9e56-4027c0ebc4f8","endedAt":"2025-12-23T09:12:27.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"b09fb226-bdf2-4a4c-8446-cf1b2dbd86c9","sessionId":"3ce0183a-0dc1-4c66-b1e7-ca425f26d284","updatedAt":"2025-12-23T09:12:20.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:45"}
+{"level":"debug","message":"Fetched page 2: 22 sessions for agent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:45"}
+{"level":"info","message":"Fetched 122 sessions for agent agent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:45"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:46","url":"/agents/coconut/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for coconut:","sampleSession":{"botStartSeconds":21,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-10T06:06:42.000Z","deploymentId":"cd8424ac-7135-4f39-a858-ec4d1692b391","endedAt":"2026-01-10T06:07:19.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"0e4b3910-440c-4787-a296-aec4b1e772d5","sessionId":"0627c5f7-9d91-4396-a641-3d02e95b20b6","updatedAt":"2026-01-10T06:07:09.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:46"}
+{"level":"debug","message":"Fetched page 1: 10 sessions for coconut","service":"pipecat-sync","timestamp":"2026-01-20 14:56:46"}
+{"level":"info","message":"Fetched 10 sessions for agent coconut","service":"pipecat-sync","timestamp":"2026-01-20 14:56:46"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:47","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-20T08:44:58.000Z","deploymentId":"e437c7a9-8bf5-4645-94d5-eae785a3e0b1","endedAt":"2026-01-20T08:45:27.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"760209f0-bd8b-44a4-8f44-1de18aadd8f6","updatedAt":"2026-01-20T08:45:21.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:47"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:47"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:47","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-08T11:27:19.000Z","deploymentId":"e0d26cc8-0657-40f7-9ee6-71e702eb95b3","endedAt":"2026-01-08T11:29:51.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"db3a223e-5a67-4219-8c34-3906320178c6","updatedAt":"2026-01-08T11:29:48.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:47"}
+{"level":"debug","message":"Fetched page 2: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:47"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:48","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":3438,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-06T12:55:36.000Z","deploymentId":"f9fb98ab-1333-490c-9535-e6ba820ed810","endedAt":"2026-01-06T15:52:55.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"f90ded08-053a-447c-9fbd-84d0dcce93ed","updatedAt":"2026-01-06T15:52:53.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:48"}
+{"level":"debug","message":"Fetched page 3: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:48"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:48","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":9,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-02T13:03:36.000Z","deploymentId":"5120909b-2346-4c54-9f06-f39b663f6dc8","endedAt":"2026-01-02T13:05:42.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"86551772-7921-49ee-ae8d-4a813c220221","updatedAt":"2026-01-02T13:05:34.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:48"}
+{"level":"debug","message":"Fetched page 4: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:48"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:49","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-29T10:56:12.000Z","deploymentId":"242a6805-72c9-486f-8b8e-4ebf0fb14e18","endedAt":"2025-12-29T10:56:47.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"290a72fc-131e-4e33-8805-8908f966d551","updatedAt":"2025-12-29T10:56:47.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:49"}
+{"level":"debug","message":"Fetched page 5: 100 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:49"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:49","url":"/agents/webagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for webagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-27T02:10:37.000Z","deploymentId":"8b89b266-79e9-47e9-8e37-ed2c709dea98","endedAt":"2025-12-27T02:15:38.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"bac0558d-1542-4c55-87a4-213c2b824f67","sessionId":"4f22b76b-30ba-469b-866a-48f1f1f95bc9","updatedAt":"2025-12-27T02:15:32.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:56:49"}
+{"level":"debug","message":"Fetched page 6: 9 sessions for webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:49"}
+{"level":"info","message":"Fetched 509 sessions for agent webagent","service":"pipecat-sync","timestamp":"2026-01-20 14:56:49"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:04","url":"/agents/biolmin/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for biolmin:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-19T08:41:52.000Z","deploymentId":"9a2dd427-8345-4feb-8c0e-368350f4c453","endedAt":"2026-01-19T08:47:49.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"fa61226c-e80a-4f1d-b622-21be4f6b2abb","sessionId":"db6c6eba-6338-46e8-8703-4763c9b94ed0","updatedAt":"2026-01-19T08:47:44.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:04"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for biolmin","service":"pipecat-sync","timestamp":"2026-01-20 14:57:04"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:05","url":"/agents/biolmin/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for biolmin:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-02T14:50:17.000Z","deploymentId":"05b2213f-d4f2-4970-9b27-d06bf550eda8","endedAt":"2026-01-02T14:55:17.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"fa61226c-e80a-4f1d-b622-21be4f6b2abb","sessionId":"a4fe294c-d9e1-42c3-9c2b-f63ab8e50e7e","updatedAt":"2026-01-02T14:55:14.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:05"}
+{"level":"debug","message":"Fetched page 2: 2 sessions for biolmin","service":"pipecat-sync","timestamp":"2026-01-20 14:57:05"}
+{"level":"info","message":"Fetched 102 sessions for agent biolmin","service":"pipecat-sync","timestamp":"2026-01-20 14:57:05"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:09","url":"/agents/ecohome/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for ecohome:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":null,"createdAt":"2026-01-20T09:26:31.000Z","deploymentId":"4666e487-66ac-4782-b9c7-a3ecf788a63e","endedAt":null,"organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"39a14cef-e5e1-4468-9819-5a5597ef7c46","sessionId":"886f2a56-1bcc-4249-a233-19973113f0bf","updatedAt":"2026-01-20T09:27:04.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:09"}
+{"level":"debug","message":"Fetched page 1: 43 sessions for ecohome","service":"pipecat-sync","timestamp":"2026-01-20 14:57:09"}
+{"level":"info","message":"Fetched 43 sessions for agent ecohome","service":"pipecat-sync","timestamp":"2026-01-20 14:57:09"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:11","url":"/agents/gunjesh/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for gunjesh:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"WS_CONNECTION_CLOSED","createdAt":"2026-01-19T06:31:23.000Z","deploymentId":"2c40c25e-554d-4788-8da3-b66db4ce79c1","endedAt":"2026-01-19T06:39:14.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"c7efbfeb-c7a8-4989-984a-b17f85d18d4f","sessionId":"1bd1210f-ffab-4180-bd06-87fd50c0a533","updatedAt":"2026-01-19T06:39:11.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:11"}
+{"level":"debug","message":"Fetched page 1: 50 sessions for gunjesh","service":"pipecat-sync","timestamp":"2026-01-20 14:57:11"}
+{"level":"info","message":"Fetched 50 sessions for agent gunjesh","service":"pipecat-sync","timestamp":"2026-01-20 14:57:11"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:14","url":"/agents/sureshagent/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for sureshagent:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-14T08:55:35.000Z","deploymentId":"f714371b-ba7b-409f-8560-62e357bbd9c8","endedAt":"2026-01-14T08:56:56.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"8a8a0cd1-c4d7-4d76-a433-7358c3401bb3","sessionId":"e6dc13eb-aedf-4c6f-a3bd-ecd2e8290b46","updatedAt":"2026-01-14T08:56:52.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:14"}
+{"level":"debug","message":"Fetched page 1: 27 sessions for sureshagent","service":"pipecat-sync","timestamp":"2026-01-20 14:57:14"}
+{"level":"info","message":"Fetched 27 sessions for agent sureshagent","service":"pipecat-sync","timestamp":"2026-01-20 14:57:14"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:18","url":"/agents/v3/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:20","url":"/agents/v3/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for v3.","service":"pipecat-sync","timestamp":"2026-01-20 14:57:20"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:22","url":"/agents/apcnf/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:24","url":"/agents/apcnf/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:27","url":"/agents/apcnf-telugu/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:28","url":"/agents/apcnf-telugu/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:30","url":"/agents/methane-agent/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for methane-agent.","service":"pipecat-sync","timestamp":"2026-01-20 14:57:30"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:34","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:40","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:45","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:50","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:55","url":"/agents/agent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:57:59","url":"/agents/agent/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for agent.","service":"pipecat-sync","timestamp":"2026-01-20 14:57:59"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:15","url":"/agents/coconut/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:23","url":"/agents/coconut/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:24","url":"/agents/coconut/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:27","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:29","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:32","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:36","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:38","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:41","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:44","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:46","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:49","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:51","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:54","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:56","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:58:59","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:01","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:03","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:06","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:09","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:11","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:14","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:17","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:20","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:22","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:24","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:27","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:30","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:33","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:35","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:38","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:40","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:43","url":"/agents/webagent/logs"}
+{"level":"info","message":"🔄 Starting manual sync...","service":"pipecat-sync","timestamp":"2026-01-20 14:59:44"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:45","url":"/agents/webagent/logs"}
+{"level":"info","message":"✅ MongoDB connected successfully","service":"pipecat-sync","timestamp":"2026-01-20 14:59:45"}
+{"level":"info","message":"✅ Database indexes created","service":"pipecat-sync","timestamp":"2026-01-20 14:59:46"}
+{"level":"info","message":"🚀 Starting Pipecat to MongoDB sync job","service":"pipecat-sync","timestamp":"2026-01-20 14:59:46"}
+{"level":"info","message":"Starting agent sync...","service":"pipecat-sync","timestamp":"2026-01-20 14:59:46"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:47","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:47","url":"/agents"}
+{"level":"debug","message":"Fetched page 1: 11 agents (total: 11)","service":"pipecat-sync","timestamp":"2026-01-20 14:59:47"}
+{"level":"info","message":"Fetched 11 agents from Pipecat Cloud","service":"pipecat-sync","timestamp":"2026-01-20 14:59:47"}
+{"level":"info","message":"Agent sync completed: 0 created, 11 updated, 0 failed","service":"pipecat-sync","timestamp":"2026-01-20 14:59:48"}
+{"level":"info","message":"Found 11 agents to sync sessions for","service":"pipecat-sync","timestamp":"2026-01-20 14:59:48"}
+{"level":"info","message":"Starting session sync for agent: v3 (ID: 4b983030-e699-4c90-a182-d88152987d99)","service":"pipecat-sync","timestamp":"2026-01-20 14:59:48"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:49","url":"/agents/v3/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for v3:","sampleSession":{"botStartSeconds":24,"coldStart":true,"completionStatus":"HTTP_COMPLETED","createdAt":"2026-01-12T04:29:15.000Z","deploymentId":"2c8f7dda-a9a0-4538-bef4-66d9c3b3e74c","endedAt":"2026-01-12T04:30:22.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"4b983030-e699-4c90-a182-d88152987d99","sessionId":"b69a0928-6396-41c3-9fad-e4a108cd3b40","updatedAt":"2026-01-12T04:30:13.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:49"}
+{"level":"debug","message":"Fetched page 1: 100 sessions for v3","service":"pipecat-sync","timestamp":"2026-01-20 14:59:49"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:49","url":"/agents/v3/sessions"}
+{"dataKeys":["total_count","sessions"],"level":"debug","message":"Raw sessions response for v3:","sampleSession":{"botStartSeconds":0,"coldStart":false,"completionStatus":"HTTP_COMPLETED","createdAt":"2025-12-20T15:49:57.000Z","deploymentId":"faed5534-f5b6-408e-babc-266e4d1cd32d","endedAt":"2025-12-20T15:53:22.000Z","organizationId":"0b8f2b63-84c7-4ec0-a655-37adf577a710","serviceId":"4b983030-e699-4c90-a182-d88152987d99","sessionId":"244d36c9-232f-43a6-9d4b-9da3adec7b9b","updatedAt":"2025-12-20T15:53:17.000Z"},"service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:49"}
+{"level":"debug","message":"Fetched page 2: 68 sessions for v3","service":"pipecat-sync","timestamp":"2026-01-20 14:59:49"}
+{"level":"info","message":"Fetched 168 sessions for agent v3","service":"pipecat-sync","timestamp":"2026-01-20 14:59:49"}
+{"level":"info","message":"Fetched 168 sessions for agent v3","service":"pipecat-sync","timestamp":"2026-01-20 14:59:49"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:49","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:52","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:55","url":"/agents/webagent/logs"}
+{"level":"info","message":"Session sync for agent v3 completed: 0 created, 168 updated, 0 failed","service":"pipecat-sync","timestamp":"2026-01-20 14:59:56"}
+{"level":"info","message":"Found 168 sessions to sync logs for agent v3","service":"pipecat-sync","timestamp":"2026-01-20 14:59:56"}
+{"level":"info","message":"Starting log sync for session: b69a0928-6396-41c3-9fad-e4a108cd3b40 (agent: v3)","service":"pipecat-sync","timestamp":"2026-01-20 14:59:56"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:57","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 14:59:59","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 0): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 14:59:59"}
+{"level":"debug","message":"Fetched page 1: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 14:59:59"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:00","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 100): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:00"}
+{"level":"debug","message":"Fetched page 2: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:00"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:00","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:02","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:02"}
+{"level":"debug","message":"Fetched page 3: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:02"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:03","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 300): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:03"}
+{"level":"debug","message":"Fetched page 4: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:03"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:04","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:04","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 400): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:04"}
+{"level":"debug","message":"Fetched page 5: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:04"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:05","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 500): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:00:05"}
+{"level":"debug","message":"Fetched page 6: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:05"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:05","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 600): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:05"}
+{"level":"debug","message":"Fetched page 7: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:06"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:06","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 8: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:06"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:06","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:07","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 9: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:07"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:07","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 10: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:07"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:07","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1000): Skipped ALL 100","service":"pipecat-sync","timestamp":"2026-01-20 15:00:07"}
+{"level":"debug","message":"Fetched page 11: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:07"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:08","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 12: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:08"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:09","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:09"}
+{"level":"debug","message":"Fetched page 13: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:09"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:09","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:09","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1300): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:00:09"}
+{"level":"debug","message":"Fetched page 14: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:10"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:10","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1400): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:10"}
+{"level":"debug","message":"Fetched page 15: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:10"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:10","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 16: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:10"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:11","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 17: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:11"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:11","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1700): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:11"}
+{"level":"debug","message":"Fetched page 18: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:11"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:12","url":"/agents/webagent/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:12","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 19: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:12"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:12","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1900): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:12"}
+{"level":"debug","message":"Fetched page 20: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:12"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:13","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 21: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:13"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:13","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 22: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:13"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:15","url":"/agents/webagent/logs"}
+{"level":"info","message":"    Reached logs older than 2026-01-01T00:00:00.000Z. Stopping fetch for webagent.","service":"pipecat-sync","timestamp":"2026-01-20 15:00:15"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:16","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:16"}
+{"level":"debug","message":"Fetched page 23: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:16"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:17","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2300): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:17"}
+{"level":"debug","message":"Fetched page 24: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:17"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:18","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2400): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:00:18"}
+{"level":"debug","message":"Fetched page 25: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:19"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:20","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2500): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:20"}
+{"level":"debug","message":"Fetched page 26: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:20"}
+{"cronRunning":true,"jobStatus":{"isRunning":false,"lastRun":null,"stats":{"agents":{"created":0,"failed":0,"updated":0},"logs":{"failed":0,"inserted":0,"skipped":0},"sessions":{"created":0,"failed":0,"updated":0}}},"level":"debug","message":"Service status:","schedule":"0 * * * *","service":"pipecat-sync","timestamp":"2026-01-20 15:00:20"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:20","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2600): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:20"}
+{"level":"debug","message":"Fetched page 27: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:20"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:21","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2700): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:00:21"}
+{"level":"debug","message":"Fetched page 28: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:21"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:22","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2800): Inserted 2, Skipped 98","service":"pipecat-sync","timestamp":"2026-01-20 15:00:22"}
+{"level":"debug","message":"Fetched page 29: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:22"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:22","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 30: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:22"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:23","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 31: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:23"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:23","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 32: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:23"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:24","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:24"}
+{"level":"debug","message":"Fetched page 33: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:24"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:24","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 34: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:24"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:24","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3400): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:24"}
+{"level":"debug","message":"Fetched page 35: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:25"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:25","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 36: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:25"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:25","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3600): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:25"}
+{"level":"debug","message":"Fetched page 37: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:25"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:26","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3700): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:26"}
+{"level":"debug","message":"Fetched page 38: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:26"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:26","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 39: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:26"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:27","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3900): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:27"}
+{"level":"debug","message":"Fetched page 40: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:27"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:27","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 41: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:27"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:28","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 42: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:28"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:28","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 43: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:28"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:29","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 44: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:29"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:29","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4400): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:29"}
+{"level":"debug","message":"Fetched page 45: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:29"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:30","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4500): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:30"}
+{"level":"debug","message":"Fetched page 46: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:30"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:31","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4600): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:31"}
+{"level":"debug","message":"Fetched page 47: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:31"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:31","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 48: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:31"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:32","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4800): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:32"}
+{"level":"debug","message":"Fetched page 49: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:32"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:32","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 50: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:32"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:33","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5000): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:33"}
+{"level":"debug","message":"Fetched page 51: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:33"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:34","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5100): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:00:34"}
+{"level":"debug","message":"Fetched page 52: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:34"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:34","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5200): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:34"}
+{"level":"debug","message":"Fetched page 53: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:34"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:35","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 54: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:35"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:36","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5400): Inserted 10, Skipped 90","service":"pipecat-sync","timestamp":"2026-01-20 15:00:36"}
+{"level":"debug","message":"Fetched page 55: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:36"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:36","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5500): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:00:36"}
+{"level":"debug","message":"Fetched page 56: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:36"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:37","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5600): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:37"}
+{"level":"debug","message":"Fetched page 57: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:37"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:37","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 58: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:37"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:38","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5800): Inserted 2, Skipped 98","service":"pipecat-sync","timestamp":"2026-01-20 15:00:38"}
+{"level":"debug","message":"Fetched page 59: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:38"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:39","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5900): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:00:39"}
+{"level":"debug","message":"Fetched page 60: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:39"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:39","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6000): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:39"}
+{"level":"debug","message":"Fetched page 61: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:39"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:40","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 62: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:40"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:40","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 63: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:40"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:41","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:41","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 64: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:41"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:42","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6400): Inserted 2, Skipped 98","service":"pipecat-sync","timestamp":"2026-01-20 15:00:42"}
+{"level":"debug","message":"Fetched page 65: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:42"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:42","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6500): Skipped ALL 100","service":"pipecat-sync","timestamp":"2026-01-20 15:00:42"}
+{"level":"debug","message":"Fetched page 66: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:42"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:43","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6600): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:43"}
+{"level":"debug","message":"Fetched page 67: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:43"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:43","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6700): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:43"}
+{"level":"debug","message":"Fetched page 68: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:43"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:44","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:44","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6800): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:44"}
+{"level":"debug","message":"Fetched page 69: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:44"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:44","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6900): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:00:44"}
+{"level":"debug","message":"Fetched page 70: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:44"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:45","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7000): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:45"}
+{"level":"debug","message":"Fetched page 71: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:45"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:45","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 72: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:45"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:46","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 73: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:46"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:46","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:46","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7300): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:46"}
+{"level":"debug","message":"Fetched page 74: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:46"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:47","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7400): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:47"}
+{"level":"debug","message":"Fetched page 75: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:47"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:47","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7500): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:47"}
+{"level":"debug","message":"Fetched page 76: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:47"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:48","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 77: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:48"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:48","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:49","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7700): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:49"}
+{"level":"debug","message":"Fetched page 78: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:49"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:49","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7800): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:00:49"}
+{"level":"debug","message":"Fetched page 79: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:49"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:49","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:50","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7900): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:00:50"}
+{"level":"debug","message":"Fetched page 80: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:50"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:50","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8000): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:00:50"}
+{"level":"debug","message":"Fetched page 81: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:50"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:51","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:51","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8100): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:51"}
+{"level":"debug","message":"Fetched page 82: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:51"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:51","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 83: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:51"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:52","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:52","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8300): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:52"}
+{"level":"debug","message":"Fetched page 84: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:52"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:52","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8400): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:00:52"}
+{"level":"debug","message":"Fetched page 85: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:52"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:53","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8500): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:00:53"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:53","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Fetched page 86: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:53"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:53","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8600): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:53"}
+{"level":"debug","message":"Fetched page 87: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:54"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:54","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8700): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:54"}
+{"level":"debug","message":"Fetched page 88: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:54"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:54","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:54","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8800): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:00:54"}
+{"level":"debug","message":"Fetched page 89: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:55"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:55","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8900): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:55"}
+{"level":"debug","message":"Fetched page 90: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:55"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:55","url":"/agents/v3/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:56","url":"/agents/biolmin/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9000): Inserted 8, Skipped 92","service":"pipecat-sync","timestamp":"2026-01-20 15:00:55"}
+{"level":"debug","message":"Fetched page 91: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:56"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:56","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 92: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:56"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:56","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9200): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:56"}
+{"level":"debug","message":"Fetched page 93: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:57"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:57","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:57","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9300): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:00:57"}
+{"level":"debug","message":"Fetched page 94: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:57"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:57","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9400): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:00:57"}
+{"level":"debug","message":"Fetched page 95: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:58"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:58","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:58","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 96: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:58"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:58","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9600): Inserted 9, Skipped 91","service":"pipecat-sync","timestamp":"2026-01-20 15:00:58"}
+{"level":"debug","message":"Fetched page 97: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:59"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:59","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:00:59","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9700): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:00:59"}
+{"level":"debug","message":"Fetched page 98: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:00:59"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:00","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9800): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:00"}
+{"level":"debug","message":"Fetched page 99: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:01:00"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:00","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:00","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 9900): Inserted 2, Skipped 98","service":"pipecat-sync","timestamp":"2026-01-20 15:01:00"}
+{"level":"debug","message":"Fetched page 100: 100 logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40","service":"pipecat-sync","timestamp":"2026-01-20 15:01:00"}
+{"level":"error","message":"Request failed with status code 500","service":"pipecat-sync","status":500,"timestamp":"2026-01-20 15:01:01","url":"/agents/v3/logs"}
+{"0":"R","1":"e","10":"i","11":"l","12":"e","13":"d","14":" ","15":"w","16":"i","17":"t","18":"h","19":" ","2":"q","20":"s","21":"t","22":"a","23":"t","24":"u","25":"s","26":" ","27":"c","28":"o","29":"d","3":"u","30":"e","31":" ","32":"5","33":"0","34":"0","4":"e","5":"s","6":"t","7":" ","8":"f","9":"a","level":"error","message":"Failed to fetch logs for agent v3, session b69a0928-6396-41c3-9fad-e4a108cd3b40:","service":"pipecat-sync","timestamp":"2026-01-20 15:01:01"}
+{"0":"R","1":"e","10":"i","11":"l","12":"e","13":"d","14":" ","15":"w","16":"i","17":"t","18":"h","19":" ","2":"q","20":"s","21":"t","22":"a","23":"t","24":"u","25":"s","26":" ","27":"c","28":"o","29":"d","3":"u","30":"e","31":" ","32":"5","33":"0","34":"0","4":"e","5":"s","6":"t","7":" ","8":"f","9":"a","level":"error","message":"Failed to fetch all logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40:","service":"pipecat-sync","timestamp":"2026-01-20 15:01:01"}
+{"0":"R","1":"e","10":"i","11":"l","12":"e","13":"d","14":" ","15":"w","16":"i","17":"t","18":"h","19":" ","2":"q","20":"s","21":"t","22":"a","23":"t","24":"u","25":"s","26":" ","27":"c","28":"o","29":"d","3":"u","30":"e","31":" ","32":"5","33":"0","34":"0","4":"e","5":"s","6":"t","7":" ","8":"f","9":"a","level":"error","message":"Log sync failed for session b69a0928-6396-41c3-9fad-e4a108cd3b40:","service":"pipecat-sync","timestamp":"2026-01-20 15:01:01"}
+{"0":"R","1":"e","10":"i","11":"l","12":"e","13":"d","14":" ","15":"w","16":"i","17":"t","18":"h","19":" ","2":"q","20":"s","21":"t","22":"a","23":"t","24":"u","25":"s","26":" ","27":"c","28":"o","29":"d","3":"u","30":"e","31":" ","32":"5","33":"0","34":"0","4":"e","5":"s","6":"t","7":" ","8":"f","9":"a","level":"error","message":"Failed to sync logs for session b69a0928-6396-41c3-9fad-e4a108cd3b40:","service":"pipecat-sync","timestamp":"2026-01-20 15:01:01"}
+{"level":"info","message":"Starting log sync for session: 0ed548f9-9605-4841-88b4-fcd70fd4b79b (agent: v3)","service":"pipecat-sync","timestamp":"2026-01-20 15:01:01"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:01","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 0): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:01:01"}
+{"level":"debug","message":"Fetched page 1: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:01"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:01","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:02","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 100): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:02"}
+{"level":"debug","message":"Fetched page 2: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:02"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:02","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:02"}
+{"level":"debug","message":"Fetched page 3: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:02"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:03","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:03","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 300): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:03"}
+{"level":"debug","message":"Fetched page 4: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:03"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:04","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:04","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 400): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:04"}
+{"level":"debug","message":"Fetched page 5: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:04"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:04","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 500): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:01:04"}
+{"level":"debug","message":"Fetched page 6: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:04"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:05","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:05","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 600): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:05"}
+{"level":"debug","message":"Fetched page 7: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:05"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:05","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 8: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:05"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:06","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 9: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:06"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:06","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:06","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 10: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:06"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:07","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 11: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:07"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:07","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 12: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:07"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:07","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:07","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:07"}
+{"level":"debug","message":"Fetched page 13: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:07"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:08","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:08","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1300): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:01:08"}
+{"level":"debug","message":"Fetched page 14: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:08"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:09","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1400): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:09"}
+{"level":"debug","message":"Fetched page 15: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:09"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:09","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:09","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1500): Skipped ALL 100","service":"pipecat-sync","timestamp":"2026-01-20 15:01:09"}
+{"level":"debug","message":"Fetched page 16: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:09"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:10","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1600): Skipped ALL 100","service":"pipecat-sync","timestamp":"2026-01-20 15:01:10"}
+{"level":"debug","message":"Fetched page 17: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:10"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:10","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1700): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:10"}
+{"level":"debug","message":"Fetched page 18: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:10"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:10","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:11","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1800): Skipped ALL 100","service":"pipecat-sync","timestamp":"2026-01-20 15:01:11"}
+{"level":"debug","message":"Fetched page 19: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:11"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:11","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 1900): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:11"}
+{"level":"debug","message":"Fetched page 20: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:11"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:12","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 21: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:12"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:12","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 22: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:12"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:13","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:14","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:14"}
+{"level":"debug","message":"Fetched page 23: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:14"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:15","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2300): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:01:15"}
+{"level":"debug","message":"Fetched page 24: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:15"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:15","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2400): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:01:15"}
+{"level":"debug","message":"Fetched page 25: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:15"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:16","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:16","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2500): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:16"}
+{"level":"debug","message":"Fetched page 26: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:16"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:17","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2600): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:01:17"}
+{"level":"debug","message":"Fetched page 27: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:17"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:17","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2700): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:01:17"}
+{"level":"debug","message":"Fetched page 28: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:18"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:18","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 2800): Inserted 2, Skipped 98","service":"pipecat-sync","timestamp":"2026-01-20 15:01:18"}
+{"level":"debug","message":"Fetched page 29: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:18"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:18","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 30: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:18"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:19","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 31: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:19"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:19","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:19","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 32: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:19"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:20","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3200): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:20"}
+{"level":"debug","message":"Fetched page 33: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:20"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:20","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 34: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:20"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:21","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3400): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:21"}
+{"level":"debug","message":"Fetched page 35: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:21"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:21","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 36: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:21"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:22","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3600): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:22"}
+{"level":"debug","message":"Fetched page 37: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:22"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:23","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3700): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:23"}
+{"level":"debug","message":"Fetched page 38: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:23"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:23","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:23","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 39: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:23"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:24","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 3900): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:01:24"}
+{"level":"debug","message":"Fetched page 40: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:24"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:24","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 41: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:24"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:25","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 42: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:25"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:25","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 43: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:25"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:26","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 44: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:26"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:26","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:27","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4400): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:27"}
+{"level":"debug","message":"Fetched page 45: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:27"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:27","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4500): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:27"}
+{"level":"debug","message":"Fetched page 46: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:27"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:28","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4600): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:28"}
+{"level":"debug","message":"Fetched page 47: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:28"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:28","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 48: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:28"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:29","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 4800): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:29"}
+{"level":"debug","message":"Fetched page 49: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:29"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:29","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 50: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:29"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:29","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:30","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5000): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:30"}
+{"level":"debug","message":"Fetched page 51: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:30"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:30","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5100): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:01:30"}
+{"level":"debug","message":"Fetched page 52: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:30"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:31","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5200): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:31"}
+{"level":"debug","message":"Fetched page 53: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:31"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:31","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 54: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:31"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:32","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5400): Inserted 10, Skipped 90","service":"pipecat-sync","timestamp":"2026-01-20 15:01:32"}
+{"level":"debug","message":"Fetched page 55: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:32"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:32","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:33","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5500): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:01:33"}
+{"level":"debug","message":"Fetched page 56: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:33"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:33","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5600): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:01:33"}
+{"level":"debug","message":"Fetched page 57: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:33"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:34","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 58: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:34"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:34","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5800): Inserted 2, Skipped 98","service":"pipecat-sync","timestamp":"2026-01-20 15:01:34"}
+{"level":"debug","message":"Fetched page 59: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:34"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:35","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 5900): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:01:35"}
+{"level":"debug","message":"Fetched page 60: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:35"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:35","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:35","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6000): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:35"}
+{"level":"debug","message":"Fetched page 61: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:35"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:36","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 62: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:36"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:36","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 63: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:36"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:37","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 64: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:37"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:37","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6400): Inserted 2, Skipped 98","service":"pipecat-sync","timestamp":"2026-01-20 15:01:37"}
+{"level":"debug","message":"Fetched page 65: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:37"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:38","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 66: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:38"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:38","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:38","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6600): Inserted 5, Skipped 95","service":"pipecat-sync","timestamp":"2026-01-20 15:01:38"}
+{"level":"debug","message":"Fetched page 67: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:38"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:39","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6700): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:39"}
+{"level":"debug","message":"Fetched page 68: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:39"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:39","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6800): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:39"}
+{"level":"debug","message":"Fetched page 69: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:39"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:40","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 6900): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:01:40"}
+{"level":"debug","message":"Fetched page 70: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:40"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:40","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7000): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:40"}
+{"level":"debug","message":"Fetched page 71: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:41"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:41","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:41","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 72: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:41"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:41","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 73: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:41"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:42","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7300): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:42"}
+{"level":"debug","message":"Fetched page 74: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:42"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:42","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7400): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:42"}
+{"level":"debug","message":"Fetched page 75: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:42"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:43","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7500): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:43"}
+{"level":"debug","message":"Fetched page 76: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:43"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:43","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 77: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:43"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:44","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:44","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7700): Inserted 4, Skipped 96","service":"pipecat-sync","timestamp":"2026-01-20 15:01:44"}
+{"level":"debug","message":"Fetched page 78: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:44"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:45","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7800): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:01:45"}
+{"level":"debug","message":"Fetched page 79: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:45"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:45","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 7900): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:01:45"}
+{"level":"debug","message":"Fetched page 80: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:45"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:46","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8000): Inserted 7, Skipped 93","service":"pipecat-sync","timestamp":"2026-01-20 15:01:46"}
+{"level":"debug","message":"Fetched page 81: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:46"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:47","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8100): Inserted 1, Skipped 99","service":"pipecat-sync","timestamp":"2026-01-20 15:01:47"}
+{"level":"debug","message":"Fetched page 82: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:47"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:47","url":"/agents/v3/logs"}
+{"level":"debug","message":"Fetched page 83: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:47"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:47","url":"/agents/biolmin/logs"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:48","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8300): Inserted 6, Skipped 94","service":"pipecat-sync","timestamp":"2026-01-20 15:01:48"}
+{"level":"debug","message":"Fetched page 84: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:48"}
+{"level":"debug","message":"Pipecat API Response:","service":"pipecat-sync","status":200,"timestamp":"2026-01-20 15:01:48","url":"/agents/v3/logs"}
+{"level":"info","message":"[DEBUG] Batch (start 8400): Inserted 3, Skipped 97","service":"pipecat-sync","timestamp":"2026-01-20 15:01:48"}
+{"level":"debug","message":"Fetched page 85: 100 logs for session 0ed548f9-9605-4841-88b4-fcd70fd4b79b","service":"pipecat-sync","timestamp":"2026-01-20 15:01:48"}
