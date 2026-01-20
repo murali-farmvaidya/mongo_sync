@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "sync": "node scripts/manual-sync.js",
+    "sync": "node scripts/sync-realtime.js",
     "sync:logs": "node scripts/sync-logs-only.js",
     "test": "jest"
   },
