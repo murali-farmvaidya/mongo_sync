@@ -403,6 +403,7 @@ async function runSyncCycle() {
         logger.error('Sync Cycle Failed:', e);
     }
     logger.info(`🏁 Sync Cycle Finished. Next run in ${POLL_INTERVAL_MS / 1000}s`);
+    logger.info('💤 Sleeping... (I am still alive!)');
 }
 
 async function main() {
@@ -428,7 +429,8 @@ async function main() {
 
     } catch (e) {
         logger.error('Fatal Startup Error:', e);
-        process.exit(1);
+        // Do not exit, try to restart loop after delay to keep service alive
+        setTimeout(main, 30000);
     }
 }
 
