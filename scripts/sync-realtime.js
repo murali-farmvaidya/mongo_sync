@@ -1,16 +1,18 @@
 /**
- * Realtime Dashboard Data Sync - OPTIMIZED & ROBUST
+ * Realtime Dashboard Data Sync - OPTIMIZED & ROBUST (PostgreSQL Version)
  * 
  * Features:
  * 1. Syncs Agents, Sessions, and CLEAN Conversations (Q&A pairs only)
  * 2. Filters for data from January 1, 2026 onwards
  * 3. OPTIMIZED: Stops fetching logs once it hits data older than start date
  * 4. ROBUST CLEANING: Handles messy system prompts and escaped characters
+ * 5. POSTGRESQL: Stores data in relational tables with JSONB support
  */
 
 const path = require('path');
 require('dotenv').config();
-const mongoose = require('mongoose');
+const { DataTypes } = require('sequelize');
+const { sequelize, testConnection } = require(path.join(__dirname, '../src/config/database'));
 const PipecatClient = require(path.join(__dirname, '../src/config/pipecat'));
 const logger = require(path.join(__dirname, '../src/utils/logger'));
 
@@ -18,52 +20,99 @@ const logger = require(path.join(__dirname, '../src/utils/logger'));
 const SYNC_START_DATE = new Date('2026-01-01T00:00:00Z');
 const POLL_INTERVAL_MS = 60000; // Run every 60 seconds
 
-// ============ SCHEMAS ============
+// ============ MODELS (Sequelize) ============
 
-const agentSchema = new mongoose.Schema({
-    agent_id: { type: String, required: true, unique: true },
-    name: { type: String, required: true },
-    created_at: Date,
-    updated_at: Date,
-    session_count: { type: Number, default: 0 },
-    last_synced: { type: Date, default: Date.now }
-}, { timestamps: true });
+const Agent = sequelize.define('Agent', {
+    agent_id: {
+        type: DataTypes.STRING,
+        primaryKey: true,
+        allowNull: false
+    },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    // Timestamps created_at/updated_at are handled automatically by Sequelize
+    session_count: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+    },
+    last_synced: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
+    }
+}, {
+    tableName: 'Agents',
+    timestamps: true,
+    underscored: true // Use snake_case for DB columns (created_at)
+});
 
-const sessionSchema = new mongoose.Schema({
-    session_id: { type: String, required: true, unique: true },
-    agent_id: String,
-    agent_name: String,
-    started_at: Date,
-    ended_at: Date,
-    status: String,
-    bot_start_seconds: { type: Number, default: 0 },
-    cold_start: { type: Boolean, default: false },
-    duration_seconds: { type: Number, default: 0 },
-    conversation_count: { type: Number, default: 0 },
-    last_synced: { type: Date, default: Date.now }
-}, { timestamps: true });
+const Session = sequelize.define('Session', {
+    session_id: {
+        type: DataTypes.STRING,
+        primaryKey: true,
+        allowNull: false
+    },
+    agent_id: DataTypes.STRING,
+    agent_name: DataTypes.STRING,
+    started_at: DataTypes.DATE,
+    ended_at: DataTypes.DATE,
+    status: DataTypes.STRING,
+    bot_start_seconds: {
+        type: DataTypes.FLOAT, // Float for seconds
+        defaultValue: 0
+    },
+    cold_start: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+    },
+    duration_seconds: {
+        type: DataTypes.FLOAT,
+        defaultValue: 0
+    },
+    conversation_count: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+    },
+    last_synced: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
+    }
+}, {
+    tableName: 'Sessions',
+    timestamps: true,
+    underscored: true
+});
 
-const conversationSchema = new mongoose.Schema({
-    session_id: { type: String, required: true, index: true },
-    agent_id: String,
-    agent_name: String,
-    turns: [{
-        turn_id: Number,
-        user_message: String,
-        assistant_message: String,
-        timestamp: Date
-    }],
-    total_turns: Number,
-    first_message_at: Date,
-    last_message_at: Date,
-    last_synced: { type: Date, default: Date.now }
-}, { timestamps: true });
+const Conversation = sequelize.define('Conversation', {
+    session_id: {
+        type: DataTypes.STRING,
+        primaryKey: true, // 1-to-1 mapping roughly for this sync logic
+        allowNull: false
+    },
+    agent_id: DataTypes.STRING,
+    agent_name: DataTypes.STRING,
+    turns: {
+        type: DataTypes.JSONB, // Stores the array of objects perfectly
+        defaultValue: []
+    },
+    total_turns: DataTypes.INTEGER,
+    first_message_at: DataTypes.DATE,
+    last_message_at: DataTypes.DATE,
+    last_synced: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW
+    }
+}, {
+    tableName: 'Conversations',
+    timestamps: true,
+    underscored: true
+});
 
-conversationSchema.index({ session_id: 1 }, { unique: true });
-
-const Agent = mongoose.model('Agent', agentSchema);
-const Session = mongoose.model('Session', sessionSchema);
-const Conversation = mongoose.model('Conversation', conversationSchema);
+// Relationships (Optional but good for future expansion)
+Agent.hasMany(Session, { foreignKey: 'agent_id' });
+Session.belongsTo(Agent, { foreignKey: 'agent_id' });
+Conversation.belongsTo(Session, { foreignKey: 'session_id' });
 
 // ============ PARSING HELPERS ============
 
@@ -75,18 +124,12 @@ function extractSessionId(logMessage) {
 function cleanUserMessage(msg) {
     if (!msg) return msg;
     if (msg.includes('[KNOWLEDGE BASE CONTEXT]')) {
-        // 1. Try standard Markdown code block removal
         let cleaned = msg.replace(/\[KNOWLEDGE BASE CONTEXT\][\s\S]*?```json[\s\S]*?```\s*/, '');
-
-        // 2. Try escaped backticks (common in raw logs)
         if (cleaned.includes('[KNOWLEDGE BASE CONTEXT]')) {
             cleaned = cleaned.replace(/\[KNOWLEDGE BASE CONTEXT\][\s\S]*?\\`\\`\\`json[\s\S]*?\\`\\`\\`\s*/, '');
         }
-
-        // 3. Fallback: If still messy, assuming query is at the very end
         if (cleaned.includes('[KNOWLEDGE BASE CONTEXT]')) {
             const parts = cleaned.split('\n');
-            // Take the last non-empty line that isn't part of the block
             for (let i = parts.length - 1; i >= 0; i--) {
                 const line = parts[i].trim();
                 if (line.length > 0 && !line.includes('```') && !line.includes('---')) {
@@ -94,7 +137,6 @@ function cleanUserMessage(msg) {
                 }
             }
         }
-
         return cleaned.trim();
     }
     return msg;
@@ -126,12 +168,9 @@ function parseContextLog(logMessage) {
 
         if (nextMsgPos === -1) break;
 
-        // Try single quote content
         let contentStart = arrayContent.indexOf("'content': '", nextMsgPos);
         let quoteChar = "'";
 
-        // If not found or found AFTER the next role (unlikely but safe check), try double quote
-        // Actually, just check which one comes first after nextMsgPos
         const doubleQuoteStart = arrayContent.indexOf("'content': \"", nextMsgPos);
 
         if (contentStart === -1 || (doubleQuoteStart !== -1 && doubleQuoteStart < contentStart)) {
@@ -144,9 +183,7 @@ function parseContextLog(logMessage) {
             continue;
         }
 
-        const contentValueStart = contentStart + ` 'content': ${quoteChar}`.length - 1; // 'content': ' is 12 chars. 'content': " is 12.
-        // Actually length of "'content': '" is 12. 
-        // length of "'content': \"" is 12.
+        const contentValueStart = contentStart + ` 'content': ${quoteChar}`.length - 1;
 
         let contentEnd = contentValueStart;
         let escaped = false;
@@ -202,22 +239,18 @@ function parseContextLog(logMessage) {
     return turns;
 }
 
-// ============ SYNC FUNCTIONS ============
+// ============ SYNC FUNCTIONS (PostgreSQL) ============
 
 async function syncAgents(client) {
     const agents = await client.getAllAgents();
     for (const agent of agents) {
-        await Agent.findOneAndUpdate(
-            { agent_id: agent.id },
-            {
-                agent_id: agent.id,
-                name: agent.name,
-                created_at: agent.createdAt ? new Date(agent.createdAt) : new Date(),
-                updated_at: agent.updatedAt ? new Date(agent.updatedAt) : new Date(),
-                last_synced: new Date()
-            },
-            { upsert: true }
-        );
+        // Sequelize upsert
+        await Agent.upsert({
+            agent_id: agent.id,
+            name: agent.name,
+            last_synced: new Date()
+            // session_count: updated via logic elsewhere or defaults
+        });
     }
     return agents;
 }
@@ -236,22 +269,19 @@ async function syncSessions(client, agents) {
                 durationSeconds = Math.round((endedAt - startedAt) / 1000);
             }
 
-            await Session.findOneAndUpdate(
-                { session_id: session.sessionId },
-                {
-                    session_id: session.sessionId,
-                    agent_id: agent.id,
-                    agent_name: agent.name,
-                    started_at: startedAt,
-                    ended_at: endedAt,
-                    status: session.completionStatus || 'unknown',
-                    bot_start_seconds: session.botStartSeconds || 0,
-                    cold_start: session.coldStart || false,
-                    duration_seconds: durationSeconds,
-                    last_synced: new Date()
-                },
-                { upsert: true }
-            );
+            // Sequelize Upsert
+            await Session.upsert({
+                session_id: session.sessionId,
+                agent_id: agent.id,
+                agent_name: agent.name,
+                started_at: startedAt,
+                ended_at: endedAt,
+                status: session.completionStatus || 'unknown',
+                bot_start_seconds: session.botStartSeconds || 0,
+                cold_start: session.coldStart || false,
+                duration_seconds: durationSeconds,
+                last_synced: new Date()
+            });
         }
     }
 }
@@ -314,30 +344,42 @@ async function syncConversations(client, agents) {
                 const turns = parseContextLog(contextLog);
                 if (turns.length === 0) continue;
 
-                const existing = await Conversation.findOne({ session_id: sessionId });
+                // Check existing logic (optimized query)
+                const existing = await Conversation.findOne({ where: { session_id: sessionId } });
                 if (existing && existing.turns.length === turns.length && existing.last_message_at >= time) {
                     continue;
                 }
 
-                await Conversation.findOneAndUpdate(
-                    { session_id: sessionId },
-                    {
-                        session_id: sessionId,
-                        agent_id: agent.id,
-                        agent_name: agent.name,
-                        turns: turns,
-                        total_turns: turns.length,
-                        first_message_at: turns[0]?.timestamp || time,
-                        last_message_at: time,
-                        last_synced: new Date()
-                    },
-                    { upsert: true }
+                // Verify Session exists to prevent Foreign Key Violation
+                // (Cases where session started in 2025 but logs in 2026)
+                const parentSession = await Session.findOne({ where: { session_id: sessionId } });
+                if (!parentSession) {
+                    // logger.warn(`Skipping conversation for session ${sessionId} (Session not found/skipped due to date filter)`);
+                    continue;
+                }
+
+                await Conversation.upsert({
+                    session_id: sessionId,
+                    agent_id: agent.id,
+                    agent_name: agent.name,
+                    turns: turns, // Sequelize handles JSONB serialization
+                    total_turns: turns.length,
+                    first_message_at: turns[0]?.timestamp || time,
+                    last_message_at: time,
+                    last_synced: new Date()
+                });
+
+                // Update session count
+                await Session.update(
+                    { conversation_count: turns.length },
+                    { where: { session_id: sessionId } }
                 );
 
-                await Session.updateOne(
-                    { session_id: sessionId },
-                    { conversation_count: turns.length }
-                );
+                // Update agent session count - tricky in SQL, maybe just count rows?
+                // For now, let's just increment or better yet, recalculate periodically.
+                // Or just update the Agent record if we were tracking it there explicitly.
+                // We'll skip complex count updates for now to keep it fast, rely on SQL queries for counts.
+
                 totalSynced++;
             } catch (e) {
                 logger.error(`Error syncing session ${sessionId}: ${e.message}`);
@@ -364,19 +406,35 @@ async function runSyncCycle() {
 }
 
 async function main() {
-    logger.info('🚀 Starting Realtime Dashboard Sync Service (FINAL)');
+    logger.info('🚀 Starting Realtime Dashboard Sync Service (PostgreSQL)');
     logger.info(`📅 Filtering data from: ${SYNC_START_DATE.toISOString()}`);
 
-    await mongoose.connect(process.env.MONGODB_URI, { dbName: process.env.MONGODB_DB_NAME });
-    logger.info('✅ MongoDB connected');
+    try {
+        await testConnection();
+        // Sync Models (Create Tables if not exist)
+        logger.info('🏗️  Verifying database creation (Auto-Sync)...');
+        await sequelize.sync({ alter: true }); // uses ALTER TABLE to match model
+        logger.info('✅ Database structure is ready.');
 
-    await runSyncCycle();
-    setInterval(runSyncCycle, POLL_INTERVAL_MS);
+        await runSyncCycle();
+        // Use recursive setTimeout loop to prevent overlap, cleaner than interval
+        const loop = async () => {
+            setTimeout(async () => {
+                await runSyncCycle();
+                loop();
+            }, POLL_INTERVAL_MS);
+        }
+        loop();
+
+    } catch (e) {
+        logger.error('Fatal Startup Error:', e);
+        process.exit(1);
+    }
 }
 
 process.on('SIGINT', async () => {
     logger.info('🛑 Stopping sync service...');
-    await mongoose.disconnect();
+    await sequelize.close();
     process.exit(0);
 });
 
