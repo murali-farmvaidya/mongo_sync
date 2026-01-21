@@ -4,10 +4,9 @@
   "description": "Sync Pipecat Cloud data to MongoDB",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js",
+    "start": "node scripts/sync-realtime.js",
+    "dev": "nodemon scripts/sync-realtime.js",
     "sync": "node scripts/sync-realtime.js",
-    "sync:logs": "node scripts/sync-logs-only.js",
     "test": "jest"
   },
   "dependencies": {

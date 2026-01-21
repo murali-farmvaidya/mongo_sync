@@ -123,13 +123,28 @@ function parseContextLog(logMessage) {
 
         if (nextMsgPos === -1) break;
 
-        const contentStart = arrayContent.indexOf("'content': '", nextMsgPos);
+        // Try single quote content
+        let contentStart = arrayContent.indexOf("'content': '", nextMsgPos);
+        let quoteChar = "'";
+
+        // If not found or found AFTER the next role (unlikely but safe check), try double quote
+        // Actually, just check which one comes first after nextMsgPos
+        const doubleQuoteStart = arrayContent.indexOf("'content': \"", nextMsgPos);
+
+        if (contentStart === -1 || (doubleQuoteStart !== -1 && doubleQuoteStart < contentStart)) {
+            contentStart = doubleQuoteStart;
+            quoteChar = '"';
+        }
+
         if (contentStart === -1) {
             pos = nextMsgPos + 10;
             continue;
         }
 
-        const contentValueStart = contentStart + "'content': '".length;
+        const contentValueStart = contentStart + ` 'content': ${quoteChar}`.length - 1; // 'content': ' is 12 chars. 'content': " is 12.
+        // Actually length of "'content': '" is 12. 
+        // length of "'content': \"" is 12.
+
         let contentEnd = contentValueStart;
         let escaped = false;
 
@@ -139,7 +154,7 @@ function parseContextLog(logMessage) {
                 escaped = false;
             } else if (char === '\\') {
                 escaped = true;
-            } else if (char === "'") {
+            } else if (char === quoteChar) {
                 const after = arrayContent.substring(contentEnd + 1, contentEnd + 3);
                 if (after.startsWith('}') || after.startsWith(', ') || after.startsWith('}\n') || after.startsWith('},')) {
                     break;
@@ -150,6 +165,7 @@ function parseContextLog(logMessage) {
 
         const content = arrayContent.substring(contentValueStart, contentEnd)
             .replace(/\\'/g, "'")
+            .replace(/\\"/g, '"')
             .replace(/\\n/g, "\n");
 
         messages.push({ role: type, content });

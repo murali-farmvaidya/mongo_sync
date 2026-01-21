@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    restart: always
+    environment:
+      - NODE_ENV=production
+      # MONGODB_URI: mongodb://mongo:27017/pipecat_dashboard
+      # PIPECAT_API_KEY: ${PIPECAT_API_KEY}
+    env_file:
+      - .env
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6.0
+    restart: always
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo-data:
