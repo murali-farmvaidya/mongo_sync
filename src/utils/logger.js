@@ -2,6 +2,8 @@ const winston = require('winston');
 
 const logLevel = process.env.LOG_LEVEL || 'info';
 
+const util = require('util');
+
 const logger = winston.createLogger({
   level: logLevel,
   format: winston.format.combine(
@@ -18,7 +20,8 @@ const logger = winston.createLogger({
       format: winston.format.combine(
         winston.format.colorize(),
         winston.format.printf(({ timestamp, level, message, ...meta }) => {
-          return `${timestamp} [${level}]: ${message} ${Object.keys(meta).length ? JSON.stringify(meta) : ''}`;
+          const metaString = Object.keys(meta).length ? util.inspect(meta, { depth: 2, colors: true, compact: true, breakLength: Infinity }) : '';
+          return `${timestamp} [${level}]: ${message} ${metaString}`;
         })
       )
     }),

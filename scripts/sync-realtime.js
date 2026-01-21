@@ -36,6 +36,9 @@ const sessionSchema = new mongoose.Schema({
     started_at: Date,
     ended_at: Date,
     status: String,
+    bot_start_seconds: { type: Number, default: 0 },
+    cold_start: { type: Boolean, default: false },
+    duration_seconds: { type: Number, default: 0 },
     conversation_count: { type: Number, default: 0 },
     last_synced: { type: Date, default: Date.now }
 }, { timestamps: true });
@@ -227,6 +230,12 @@ async function syncSessions(client, agents) {
             const startedAt = session.createdAt ? new Date(session.createdAt) : new Date();
             if (startedAt < SYNC_START_DATE) continue;
 
+            const endedAt = session.endedAt ? new Date(session.endedAt) : null;
+            let durationSeconds = 0;
+            if (endedAt && startedAt) {
+                durationSeconds = Math.round((endedAt - startedAt) / 1000);
+            }
+
             await Session.findOneAndUpdate(
                 { session_id: session.sessionId },
                 {
@@ -234,8 +243,11 @@ async function syncSessions(client, agents) {
                     agent_id: agent.id,
                     agent_name: agent.name,
                     started_at: startedAt,
-                    ended_at: session.endedAt ? new Date(session.endedAt) : null,
+                    ended_at: endedAt,
                     status: session.completionStatus || 'unknown',
+                    bot_start_seconds: session.botStartSeconds || 0,
+                    cold_start: session.coldStart || false,
+                    duration_seconds: durationSeconds,
                     last_synced: new Date()
                 },
                 { upsert: true }
