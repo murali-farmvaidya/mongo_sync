@@ -19,14 +19,16 @@ const sequelize = new Sequelize(
         dialectOptions: process.env.POSTGRES_SSL === 'true' ? {
             ssl: {
                 require: true,
-                rejectUnauthorized: false // Azure flexible server often uses self-signed or internal certs
-            }
+                rejectUnauthorized: false
+            },
+            keepAlive: true // IMPORTANT: Keeps Azure connection open
         } : {},
         pool: {
             max: 5,
             min: 0,
-            acquire: 30000,
-            idle: 10000
+            acquire: 60000,
+            idle: 5000, // Close idle connections faster than Azure's 10-min timeout
+            evict: 1000 // Often check for idle connections
         }
     }
 );
